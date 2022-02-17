@@ -56,8 +56,8 @@ class BgfxConan(ConanFile):
     def package_info(self):
         self.cpp_info.libs = ["bgfx", "bimg", "bx"]
         self.cpp_info.libs.extend(["astc-codec", "astc", "edtaa3", "etc1", "etc2", "iqa", "squish", "pvrtc"])
-        if self.settings.os != "Switch":
-            self.cpp_info.libs.extend(["nvtt"])
+        #if self.settings.os != "Switch":
+        #    self.cpp_info.libs.extend(["nvtt"])
         if self.settings.os == "Macos":
             self.cpp_info.exelinkflags = ["-framework Cocoa", "-framework QuartzCore", "-framework OpenGL", "-weak_framework Metal"]
         if self.settings.os == "Linux":
