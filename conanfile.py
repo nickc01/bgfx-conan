@@ -20,8 +20,8 @@ class BgfxConan(ConanFile):
 
     def source(self):
         self.run("git clone https://github.com/nickc01/bgfx-conan.git")
-        self.run("cd bgfx-cmake")
-        copy_tree("bgfx-cmake", ".")
+        self.run("cd bgfx-conan")
+        copy_tree("bgfx-conan", ".")
         self.run("git submodule update --init --recursive")
 
     def build(self):
