@@ -1,0 +1,1 @@
+This is a fork of bgfx-conan, with the only difference being that it no longer uses SSH to clone the repository.
